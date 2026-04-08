@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import authroutes from "./routes/authroute.js";
 import assetroutes from "./routes/Assetsroute.js";
 import assetUpdateroutes from "./routes/assetUpdateroutes.js";
-import dotenv from "dotenv";
+
 
 const app= express();
 
@@ -53,4 +53,3 @@ app.use((err, req, res, next) => {
 });
 
 export default app;
-

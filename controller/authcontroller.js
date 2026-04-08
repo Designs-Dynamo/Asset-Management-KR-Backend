@@ -214,7 +214,7 @@ export const forgotPassword = async (req, res) => {
     await user.save();
 
     // 3. Send Email using Resend Web Template
-    const resetUrl = `https://kr-india-assets-8kmyinj9e-jay-patels-projects-5e30b249.vercel.app/reset-password/${resetToken}`;
+    const resetUrl = `https://kr-india-assets.vercel.app/reset-password/${resetToken}`;
 
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
